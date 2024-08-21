@@ -1,0 +1,14 @@
+.header-image {
+    width: 80%;
+    margin-top: -2em;
+    margin-bottom: 2em;
+}
+
+.blog-bio-pic {
+    margin: 0 1em 1em 0;
+    width: 50%;
+}
+
+p {
+    text-align: justify;
+}

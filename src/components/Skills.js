@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
+import './Skills.css';
 
 const Skills = () => {
     return (
@@ -13,6 +14,7 @@ const Skills = () => {
             <hr class="my-4"/>
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         </div>
+
       </Container>
     </>
     )

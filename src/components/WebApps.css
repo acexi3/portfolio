@@ -1,0 +1,11 @@
+.webapp-header-image {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.webapp-profile-pic {
+    float: left;
+    margin: 0 1em 1em 0;
+    width: 30%;
+}
