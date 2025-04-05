@@ -24,6 +24,23 @@ export default function Blog() {
             <p>We'll lay all these little funky little things in there. Now we'll take the almighty fan brush. And maybe a little bush lives there. We don't have anything but happy trees here. Life is too short to be alone, too precious. Share it with a friend. You better get your coat out, this is going to be a cold painting.</p>
             <p>We need a shadow side and a highlight side. Use what you see, don't plan it. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. This piece of canvas is your world.</p>
           </Col>
+          <Row className="show-grid text-center">
+          <Col xs={12} sm={4} className="webpage-wrapper">
+            <Image src="assets/image-1.jpg" className="webpage-pic" rounded />
+            <h3>Wat Arun</h3>
+            <p>A beautiful temple built on the banks of the Chao Phraya</p>
+          </Col>  
+          <Col xs={12} sm={4} className="webpage-wrapper">
+            <Image src="assets/image-2.jpg" className="webpage-pic" rounded />
+            <h3>Bangkok</h3>
+            <p>City full of life and lights</p>
+          </Col>  
+          <Col xs={12} sm={4} className="webpage-wrapper">
+            <Image src="assets/image-3.jpg" className="webpage-pic" rounded />
+            <h3>Pai</h3>
+            <p>A beautiful and peaceful village in the mountains</p>
+          </Col>  
+        </Row>
         </Row>
       </Container>
     </>

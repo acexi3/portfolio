@@ -25,13 +25,13 @@ const About = () => {
           <p>That's a crooked tree. We'll send him to Washington.</p>
         </Col>  
         <Col xs={12} sm={4} className="person-wrapper">
-          <Image src="assets/person-1.jpg" roundedCircle className="profile-pic" />
-          <h3>Job</h3>
+        <Image src="assets/person-2.jpg" roundedCircle className="profile-pic" />
+          <h3>WebApps</h3>
           <p>That's a crooked tree. We'll send him to Ottawa.</p>
         </Col>  
         <Col xs={12} sm={4} className="person-wrapper">
-          <Image src="assets/person-2.jpg" roundedCircle className="profile-pic" />
-          <h3>Joy</h3>
+        <Image src="assets/websites/acexi3art_07.png" roundedCircle className="profile-pic" />
+          <h3>Websites</h3>
           <p>That's a crooked tree. We'll send him to Bangkok.</p>
         </Col>  
       </Row>  
