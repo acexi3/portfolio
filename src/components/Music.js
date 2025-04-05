@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
 
-export default function Meme() {
+export default function Music() {
   return (
     <>
       <CustomNavbar />

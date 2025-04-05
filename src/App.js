@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 import WebApps from './components/WebApps';
 import WebPages from './components/WebPages';
 import Blog from './components/Blog';
-import Meme from './components/Meme';
+import Music from './components/Music';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/webapps" element={<WebApps />} />
         <Route path="/webpages" element={<WebPages />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/meme" element={<Meme />} />
+        <Route path="/music" element={<Music />} />
       </Routes>
     </>
   )

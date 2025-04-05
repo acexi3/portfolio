@@ -24,10 +24,8 @@ function CustomNavbar() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/blog">My Blog</Nav.Link>
-            <Nav.Link eventKey={2} href="/meme">
-              My Favorite Meme
-            </Nav.Link>
+            <Nav.Link href="/blog">Thai Blog</Nav.Link>
+            <Nav.Link eventKey={2} href="/music">My Music</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
