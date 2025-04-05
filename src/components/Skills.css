@@ -1,0 +1,33 @@
+.skills-container {
+  /* Add any container-specific styles if needed */
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 3rem 1rem; /* Add vertical and horizontal padding */
+  border-radius: 0.5rem; /* Optional: rounded corners */
+}
+
+.skill-card {
+  width: 150px; /* Adjust card width as needed */
+  height: 180px; /* Adjust card height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid #ddd; /* Slightly darker border */
+}
+
+.skill-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.skill-logo {
+  width: 60px;  /* Set fixed width */
+  height: 60px; /* Set fixed height */
+  object-fit: contain;
+  margin-bottom: 1rem; /* Space between logo and title */
+}
+
+.skill-card .card-title {
+  font-size: 1rem; /* Adjust title font size */
+}
