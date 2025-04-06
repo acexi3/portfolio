@@ -22,21 +22,35 @@
     background-image: none;
     border: none;
     border-radius: 0;
-    background-color: #2892D7;
+    background-color: #FFA500; /* Orange base color */
+    color: white; /* Ensure text is readable on orange */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .btn-primary:hover {
-    background-color: #1f7bbd;
+    background-color: #E69500; /* Darker orange on hover */
+    color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:active {
-    background-color: #1a68a0;
+    background-color: #CC8400; /* Even darker orange when active */
+    color: white;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 h3 {
     margin-bottom: 1em;
+}
+
+/* Styling for h3 links */
+.h3-link {
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Inherit color from parent (usually black/dark grey) */
+}
+
+.h3-link:hover h3 {
+    color: #FFA500; /* Change hover color to orange */
+    /* text-decoration: underline; */ /* REMOVED underline on hover */
 }

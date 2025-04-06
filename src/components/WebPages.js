@@ -13,7 +13,7 @@ const WebPages = () => {
     <>
       <CustomNavbar />
       <Container className="page-container">
-        <h1 className="text-center mb-4">Webpages Showcase</h1>
+        <h1 className="text-center mb-4">WebPages Showcase</h1>
         <Row xs={1} md={2} lg={3} className="g-4">
           {webPages.map((page) => (
             <Col key={page.id}>

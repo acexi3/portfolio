@@ -12,6 +12,7 @@ const skills = [
   { name: 'Next.js', logo: '../assets/logos/nextjslogo.svg' },
   { name: 'Node.js', logo: '../assets/logos/nodejs.svg' },
   { name: 'Express', logo: '../assets/logos/express.svg' },
+  { name: 'Docker', logo: '../assets/logos/docker.svg' },
   { name: 'REST API', logo: '../assets/logos/restapi.svg' }, 
   { name: 'Claude AI', logo: '../assets/logos/anthropic.png' },        
   { name: 'Python', logo: '../assets/logos/python.svg' },

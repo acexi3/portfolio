@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { LinkContainer } from 'react-router-bootstrap';
 import './CustomNavbar.css';
 
 function CustomNavbar() {
@@ -13,19 +14,37 @@ function CustomNavbar() {
             collapseOnSelect expand="lg" 
             className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">douglasWB</Navbar.Brand>
+        <LinkContainer to="/">
+          <Navbar.Brand>douglasWB</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/skills">Skills</Nav.Link>
+            <LinkContainer to="/skills">
+              <Nav.Link>Skills</Nav.Link>
+            </LinkContainer>
             <NavDropdown title="Portfolio" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="/webapps">WebApps</NavDropdown.Item>
-              <NavDropdown.Item href="/webpages">WebPages</NavDropdown.Item>
+              <NavDropdown title="WebApps" id="webapps-nested-dropdown" drop="end">
+                <LinkContainer to="/webapps/findyournextjam">
+                  <NavDropdown.Item>Find Your Next Jam</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/webapps/condoai">
+                  <NavDropdown.Item>Condo AI App</NavDropdown.Item>
+                </LinkContainer>
+              </NavDropdown>
+              <NavDropdown.Divider />
+              <LinkContainer to="/webpages">
+                <NavDropdown.Item>WebPages</NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/blog">Thai Blog</Nav.Link>
-            <Nav.Link eventKey={2} href="/music">My Music</Nav.Link>
+            <LinkContainer to="/blog">
+              <Nav.Link>Thai Blog</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/music">
+              <Nav.Link>My Music</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>

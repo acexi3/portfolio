@@ -27,21 +27,27 @@ const About = () => {
             <Link to="/blog">
               <Image src="assets/2021Portrait.jpg" roundedCircle className="profile-pic" />
             </Link>
-            <h3>Blog</h3>
+            <Link to="/blog" className="h3-link">
+              <h3>Blog</h3>
+            </Link>
             <p>That's a crooked tree. We'll send him to Washington.</p>
           </Col>
           <Col xs={12} sm={4} className="person-wrapper">
             <Link to="/webapps">
               <Image src="assets/webapps/findyournextjam01.png" roundedCircle className="profile-pic" />
             </Link>
-            <h3>WebApps</h3>
+            <Link to="/webapps" className="h3-link">
+              <h3>WebApps</h3>
+            </Link>
             <p>That's a crooked tree. We'll send him to Ottawa.</p>
           </Col>
           <Col xs={12} sm={4} className="person-wrapper">
             <Link to="/webpages">
               <Image src="assets/websites/acexi3art_07.png" roundedCircle className="profile-pic" />
             </Link>
-            <h3>WebPages</h3>
+            <Link to="/webpages" className="h3-link">
+              <h3>WebPages</h3>
+            </Link>
             <p>That's a crooked tree. We'll send him to Bangkok.</p>
           </Col>
         </Row>
