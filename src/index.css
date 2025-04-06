@@ -8,13 +8,6 @@ body {
   /* overflow: hidden; */ /* REMOVED: No longer globally hidden */
 }
 
-/* REMOVED: Class to disable scrolling */
-/*
-body.no-scroll {
-  overflow: hidden;
-}
-*/
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -32,4 +25,28 @@ p {
   border-radius: 0.5rem;    /* Optional: rounded corners */
   margin-top: 1.5rem;       /* Default top margin (mt-4) */
   margin-bottom: 1rem;      /* Default bottom margin */
+}
+
+/* Override Navbar background color */
+.navbar.bg-dark {
+  background-color: #003366 !important; /* Dark Blue */
+}
+
+/* Set hover color ONLY for Portfolio dropdown toggle */
+[data-bs-theme="dark"] #collapsible-nav-dropdown:hover,
+[data-bs-theme="dark"] #collapsible-nav-dropdown:focus {
+  color: #FFA500 !important; /* Brighter Orange */
+}
+
+/* Set hover background/color ONLY for items within Portfolio dropdown */
+[data-bs-theme="dark"] .dropdown-menu[aria-labelledby="collapsible-nav-dropdown"] .dropdown-item:hover,
+[data-bs-theme="dark"] .dropdown-menu[aria-labelledby="collapsible-nav-dropdown"] .dropdown-item:focus {
+  color: white !important;              /* White text on hover */
+  background-color: #CC7A00;           /* Autumn Orange background */
+}
+
+/* Ensure nested dropdown titles within Portfolio also get bright orange text */
+[data-bs-theme="dark"] .dropdown-menu[aria-labelledby="collapsible-nav-dropdown"] .dropdown-toggle:hover,
+[data-bs-theme="dark"] .dropdown-menu[aria-labelledby="collapsible-nav-dropdown"] .dropdown-toggle:focus {
+    color: #FFA500 !important; /* Brighter Orange */
 }
