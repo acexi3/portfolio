@@ -7,7 +7,7 @@ export default function Blog() {
   return (
     <>
       <CustomNavbar />
-      <Container>
+      <Container className="page-container">
         <h2>Blog</h2>
         <Row>
           <Col xs={12} sm={8} className="main-section">

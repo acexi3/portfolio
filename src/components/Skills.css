@@ -1,9 +1,11 @@
+/* Remove this rule as it's now handled globally by .page-container */
+/*
 .skills-container {
-  /* Add any container-specific styles if needed */
-  background-color: #e9ecef; /* Slightly darker grey background */
-  padding: 3rem 1rem; /* Add vertical and horizontal padding */
-  border-radius: 0.5rem; /* Optional: rounded corners */
+  background-color: #e9ecef; 
+  padding: 3rem 1rem; 
+  border-radius: 0.5rem; 
 }
+*/
 
 .skill-card {
   width: 150px; /* Adjust card width as needed */

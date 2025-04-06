@@ -29,7 +29,7 @@ const Skills = () => {
     return (
       <>
         <CustomNavbar />
-        <Container className="skills-container mt-4 mb-5">
+        <Container className="page-container">
           <h2 className="display-5 mb-5 text-center">Technologies & frameworks I'm most comfortable with:</h2>
         
           <Row xs={1} sm={2} md={4} lg={6} className="g-4 justify-content-center">

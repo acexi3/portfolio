@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Image } from 'react-bootstrap';
+import { Container, Col, Image, Card, Button, Row } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
 import './WebApps.css';
 
@@ -7,7 +7,7 @@ const WebApps = () => {
     return (
       <>
       <CustomNavbar sticky="top"/>
-      <Container>
+      <Container className="page-container">
         <div>
           <Image src="assets/image-4.jpg" className="webapp-header-image" rounded />
           <Container>

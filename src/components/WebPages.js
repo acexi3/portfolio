@@ -1,37 +1,29 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Card, Button, Row, Col, Image } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
 import './WebPages.css';
 
-export default function WebPages() {
+const WebPages = () => {
+  // Dummy data for web pages
+  const webPages = [
+    // ... (existing web pages array)
+  ];
+
   return (
     <>
-    <CustomNavbar />
-      <Container>
-          <div class="bg-light p-5 rounded-lg m-3">
-            <h1 class="display-4">Webpage Designs</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4"/>
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          </div>
-          <Row className="show-grid text-center">
-          <Col xs={12} sm={4} className="webpage-wrapper">
-            <Image src="assets/image-1.jpg" className="webpage-pic" rounded />
-            <h3>Wat Arun</h3>
-            <p>A beautiful temple built on the banks of the Chao Phraya</p>
-          </Col>  
-          <Col xs={12} sm={4} className="webpage-wrapper">
-            <Image src="assets/image-2.jpg" className="webpage-pic" rounded />
-            <h3>Bangkok</h3>
-            <p>City full of life and lights</p>
-          </Col>  
-          <Col xs={12} sm={4} className="webpage-wrapper">
-            <Image src="assets/image-3.jpg" className="webpage-pic" rounded />
-            <h3>Pai</h3>
-            <p>A beautiful and peaceful village in the mountains</p>
-          </Col>  
+      <CustomNavbar />
+      <Container className="page-container">
+        <h1 className="text-center mb-4">Websites Showcase</h1>
+        <Row xs={1} md={2} lg={3} className="g-4">
+          {webPages.map((page) => (
+            <Col key={page.id}>
+             {/* ... existing Card structure ... */}
+            </Col>
+          ))}
         </Row>
       </Container>
-    </> 
-  )
+    </>
+  );
 };
+
+export default WebPages;

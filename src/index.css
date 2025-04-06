@@ -17,3 +17,12 @@ p {
   color: grey;
   font-weight: 300;
 }
+
+/* Style for main page content containers */
+.page-container {
+  background-color: #e9ecef; /* Slightly darker grey background */
+  padding: 3rem 1rem;       /* Vertical and horizontal padding */
+  border-radius: 0.5rem;    /* Optional: rounded corners */
+  margin-top: 1.5rem;       /* Default top margin (mt-4) */
+  margin-bottom: 3rem;      /* Default bottom margin (mb-5) */
+}
