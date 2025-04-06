@@ -9,7 +9,7 @@
 
 .skill-card {
   width: 150px; /* Adjust card width as needed */
-  height: 180px; /* Adjust card height as needed */
+  height: 160px; /* Reduced card height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +27,7 @@
   width: 60px;  /* Set fixed width */
   height: 60px; /* Set fixed height */
   object-fit: contain;
-  margin-bottom: 1rem; /* Space between logo and title */
+  /* margin-bottom: 1rem; */ /* REMOVED margin */
 }
 
 .skill-card .card-title {

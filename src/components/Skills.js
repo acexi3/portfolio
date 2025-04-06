@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
 import './Skills.css';
@@ -26,32 +26,40 @@ const skills = [
 ];
 
 const Skills = () => {
-    return (
-      <>
-        <CustomNavbar />
-        <Container className="page-container">
-          <h2 className="display-5 mb-5 text-center">Technologies & frameworks I'm most comfortable with:</h2>
-        
-          <Row xs={1} sm={2} md={4} lg={6} className="g-4 justify-content-center">
-            {skills.map((skill, index) => (
-              <Col key={index} className="d-flex justify-content-center">
-                <Card className="skill-card text-center">
-                  <Card.Body>
-                    <img
-                      src={skill.logo} // <-- Placeholder path
-                      alt={`${skill.name} logo`}
-                      className="skill-logo mb-3"
-                      onError={(e) => { e.target.style.display = 'none'; e.target.onerror = null; }} // Hide if logo fails to load
-                    />
-                    <Card.Title>{skill.name}</Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </>
-    );
+  // Add/remove no-scroll class on mount/unmount
+  useEffect(() => {
+    document.body.classList.add('no-scroll');
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, []); // Empty dependency array ensures this runs only on mount and unmount
+
+  return (
+    <>
+      <CustomNavbar />
+      <Container className="page-container">
+        <h2 className="display-5 mb-5 text-center">Technologies & frameworks I'm most comfortable with:</h2>
+      
+        <Row xs={1} sm={2} md={4} lg={6} className="g-4 justify-content-center">
+          {skills.map((skill, index) => (
+            <Col key={index} className="d-flex justify-content-center">
+              <Card className="skill-card text-center">
+                <Card.Body>
+                  <img
+                    src={skill.logo} // <-- Placeholder path
+                    alt={`${skill.name} logo`}
+                    className="skill-logo mb-3"
+                    onError={(e) => { e.target.style.display = 'none'; e.target.onerror = null; }} // Hide if logo fails to load
+                  />
+                  <Card.Title>{skill.name}</Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </>
+  );
 };
 
 export default Skills;

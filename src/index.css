@@ -5,7 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden; /* Prevent scrolling on the body */
+  /* overflow: hidden; */ /* REMOVED: No longer globally hidden */
+}
+
+/* ADDED: Class to disable scrolling */
+body.no-scroll {
+  overflow: hidden;
 }
 
 code {
@@ -21,8 +26,8 @@ p {
 /* Style for main page content containers */
 .page-container {
   background-color: #e9ecef; /* Slightly darker grey background */
-  padding: 3rem 1rem;       /* Vertical and horizontal padding */
+  padding: 0.5rem 3rem 3rem 3rem; /* Keep top padding small, increase bottom padding */
   border-radius: 0.5rem;    /* Optional: rounded corners */
   margin-top: 1.5rem;       /* Default top margin (mt-4) */
-  margin-bottom: 3rem;      /* Default bottom margin (mb-5) */
+  margin-bottom: 1rem;      /* Default bottom margin (mb-5) */
 }

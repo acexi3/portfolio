@@ -3,16 +3,17 @@
 }
 
 .profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     margin-bottom: 1em;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 1px solid black;
 }
 
 .profile-pic:hover {
     box-shadow: 0 0 8px 1px rgba(5, 5, 5, 0.5);
-    filter: brightness(1.2); /* Slightly brighten the logos */
+    filter: brightness(1.2);
 }
 
 .btn-primary {
@@ -20,6 +21,18 @@
     border: none;
     border-radius: 0;
     background-color: #2892D7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #1f7bbd;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:active {
+    background-color: #1a68a0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 h3 {
