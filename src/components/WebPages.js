@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Card, Button, Row, Col, Image } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
 import './WebPages.css';
@@ -8,14 +8,6 @@ const WebPages = () => {
   const webPages = [
     // ... (existing web pages array)
   ];
-
-  // Add/remove no-scroll class on mount/unmount
-  useEffect(() => {
-    document.body.classList.add('no-scroll');
-    return () => {
-      document.body.classList.remove('no-scroll');
-    };
-  }, []);
 
   return (
     <>

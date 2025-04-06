@@ -1,16 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Col, Image, Card, Button, Row } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
 import './WebApps.css';
 
 const WebApps = () => {
-    useEffect(() => {
-        document.body.classList.add('no-scroll');
-        return () => {
-            document.body.classList.remove('no-scroll');
-        };
-    }, []);
-
     return (
       <>
       <CustomNavbar sticky="top"/>

@@ -1,16 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
 import './Music.css';
 
 const Music = () => {
-    useEffect(() => {
-        document.body.classList.add('no-scroll');
-        return () => {
-            document.body.classList.remove('no-scroll');
-        };
-    }, []);
-
     return (
       <>
         <CustomNavbar />

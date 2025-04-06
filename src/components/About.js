@@ -1,17 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
 import { Link } from 'react-router-dom';
 import './About.css';
 
 const About = () => {
-  useEffect(() => {
-    document.body.classList.add('no-scroll');
-    return () => {
-      document.body.classList.remove('no-scroll');
-    };
-  }, []);
-
   return (
     <>
       <CustomNavbar />

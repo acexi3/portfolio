@@ -8,10 +8,12 @@ body {
   /* overflow: hidden; */ /* REMOVED: No longer globally hidden */
 }
 
-/* ADDED: Class to disable scrolling */
+/* REMOVED: Class to disable scrolling */
+/*
 body.no-scroll {
   overflow: hidden;
 }
+*/
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -26,8 +28,8 @@ p {
 /* Style for main page content containers */
 .page-container {
   background-color: #e9ecef; /* Slightly darker grey background */
-  padding: 0.5rem 3rem 3rem 3rem; /* Keep top padding small, increase bottom padding */
+  padding: 0.5rem 1rem 3rem 1rem; /* Adjusted horizontal padding */
   border-radius: 0.5rem;    /* Optional: rounded corners */
   margin-top: 1.5rem;       /* Default top margin (mt-4) */
-  margin-bottom: 1rem;      /* Default bottom margin (mb-5) */
+  margin-bottom: 1rem;      /* Default bottom margin */
 }

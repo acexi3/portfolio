@@ -3,8 +3,10 @@
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 60%;  /* Responsive width (adjust as needed) */
+    max-width: 200px; /* Max size on larger screens */
+    height: auto; /* Let height adjust before cropping */
+    aspect-ratio: 1 / 1; /* Force square aspect ratio */
     object-fit: cover;
     margin-bottom: 1em;
     transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;

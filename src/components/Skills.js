@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
 import './Skills.css';
@@ -26,14 +26,6 @@ const skills = [
 ];
 
 const Skills = () => {
-  // Add/remove no-scroll class on mount/unmount
-  useEffect(() => {
-    document.body.classList.add('no-scroll');
-    return () => {
-      document.body.classList.remove('no-scroll');
-    };
-  }, []); // Empty dependency array ensures this runs only on mount and unmount
-
   return (
     <>
       <CustomNavbar />
